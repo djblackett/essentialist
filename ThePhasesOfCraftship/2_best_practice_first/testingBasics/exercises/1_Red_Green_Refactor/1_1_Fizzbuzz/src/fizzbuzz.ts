@@ -1,6 +1,10 @@
 
 export function fizzbuzz(num: number) {
 
+    if (typeof num !== "number") {
+        throw new Error("Input must be a number")
+    }
+
     if (num < 1 || num > 100) {
         throw new Error("Numbers must be between 1 and 100 (inclusive)");
     }
