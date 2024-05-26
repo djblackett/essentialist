@@ -38,6 +38,22 @@ describe('palindrome checker', () => {
         expect(isPalindrome("1Never Odd or Even1")).toBe(true);
     })
 
+    const inputs = ["mom", "Mom", "MoM", "Momx", "xMomx",
+        "Was It A Rat I Saw", "Never Odd or Even", "Never Odd or Even1",
+        "1Never Odd or Even1"]
+
+    const results = [true, true, true, false, true, true, true, false, true]
+
+    const testCases = inputs.map((input, index) => [input, results[index]]);
+
+    test.each(testCases)(
+        "given %p as input, returns %p",
+        (input, expectedResult) => {
+            const result = isPalindrome(input as string);
+            expect(result).toEqual(expectedResult);
+        }
+    );
+
     // "mom" returns true
     // "Mom" returns true
     // "MoM" returns true
