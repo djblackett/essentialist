@@ -18,6 +18,10 @@ describe('palindrome checker', () => {
         expect(isPalindrome("Momx")).toBe(false);
     })
 
+    test("'xMomx' should return true", () => {
+        expect(isPalindrome("xMomx")).toBe(true);
+    })
+
     // "mom" returns true
     // "Mom" returns true
     // "MoM" returns true
