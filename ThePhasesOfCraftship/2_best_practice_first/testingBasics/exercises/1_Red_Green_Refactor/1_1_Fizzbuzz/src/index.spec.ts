@@ -10,7 +10,9 @@ describe("fizzbuzz", () => {
         expect(fizzbuzz(5)).toEqual("buzz");
     });
 
-
+    test("10 should return buzz", () => {
+        expect(fizzbuzz(10)).toEqual("buzz");
+        });
 
 });
 
