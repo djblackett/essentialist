@@ -27,7 +27,7 @@ describe("fizzbuzz", () => {
     })
 
     test("102 should throw an error", () => {
-        expect(fizzbuzz(102)).toThrowError("Numbers must be between 1 and 100 (inclusive)")
+        expect(() => fizzbuzz(102)).toThrow(new Error("Numbers must be between 1 and 100 (inclusive)"))
     })
 });
 
