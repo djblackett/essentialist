@@ -10,6 +10,10 @@ describe('palindrome checker', () => {
         expect(isPalindrome("Mom")).toBe(true);
     })
 
+    test("'MoM' should return true", () => {
+        expect(isPalindrome("MoM")).toBe(true);
+    })
+
     // "mom" returns true
     // "Mom" returns true
     // "MoM" returns true
