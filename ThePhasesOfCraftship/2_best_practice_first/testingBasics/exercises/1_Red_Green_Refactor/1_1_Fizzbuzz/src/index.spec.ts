@@ -18,6 +18,10 @@ describe("fizzbuzz", () => {
         expect(fizzbuzz(3)).toEqual("fizz");
     })
 
+    test("6 should return fizz", () => {
+        expect(fizzbuzz(6)).toEqual("fizz");
+    })
+
 });
 
 
