@@ -1,9 +1,9 @@
 import {fizzbuzz} from "./fizzbuzz";
 
-describe("fizzbuzz", () => {
+describe("FizzBuzz", () => {
 
     const inputs = [3, 5, 9, 10, 15, 42, 43, 45]
-    const results = ["fizz", "buzz", "fizz", "buzz", "fizzbuzz", "fizz", "43", "fizzbuzz"]
+    const results = ["Fizz", "Buzz", "Fizz", "Buzz", "FizzBuzz", "Fizz", "43", "FizzBuzz"]
 
     const testCases = inputs.map((input, index) => [input, results[index]]);
 

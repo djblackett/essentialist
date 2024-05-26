@@ -10,12 +10,12 @@ export function fizzbuzz(num: number) {
     }
 
     if (num % 3 == 0 && num % 5 == 0) {
-        return "fizzbuzz";
+        return "FizzBuzz";
     }
     if (num % 5 === 0) {
-        return "buzz"
+        return "Buzz"
     } else if (num % 3 === 0) {
-        return "fizz"
+        return "Fizz"
     }
     return num.toString(10)
 }
