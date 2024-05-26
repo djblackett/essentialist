@@ -25,6 +25,10 @@ describe("fizzbuzz", () => {
     test("15 should return fizzbuzz", () => {
         expect(fizzbuzz(15)).toEqual("fizzbuzz")
     })
+
+    test("102 should throw an error", () => {
+        expect(fizzbuzz(102)).toThrowError("Numbers must be between 1 and 100 (inclusive)")
+    })
 });
 
 
