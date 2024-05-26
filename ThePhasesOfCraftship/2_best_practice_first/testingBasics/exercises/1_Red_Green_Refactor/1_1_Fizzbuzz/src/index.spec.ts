@@ -18,8 +18,8 @@ describe("fizzbuzz", () => {
         expect(fizzbuzz(3)).toEqual("fizz");
     })
 
-    test("6 should return fizz", () => {
-        expect(fizzbuzz(6)).toEqual("fizz");
+    test("9 should return fizz", () => {
+        expect(fizzbuzz(9)).toEqual("fizz");
     })
 
     test("15 should return fizzbuzz", () => {
@@ -32,6 +32,18 @@ describe("fizzbuzz", () => {
 
     test("non-number inputs should throw error", () => {
         expect(() => fizzbuzz("25" as unknown as number)).toThrow("Input must be a number")
+    })
+
+    test("43 should return '43'", () => {
+        expect(fizzbuzz(43)).toEqual("43");
+    });
+
+    test("42 should return fizz", () => {
+        expect(fizzbuzz(42)).toEqual("fizz");
+    });
+
+    test("45 should return fizzbuzz", () => {
+        expect(fizzbuzz(45)).toEqual("fizzbuzz");
     })
 });
 
