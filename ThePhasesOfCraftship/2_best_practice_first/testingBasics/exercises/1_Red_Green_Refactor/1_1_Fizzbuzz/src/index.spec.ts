@@ -1,3 +1,4 @@
+import {fizzbuzz} from "./fizzbuzz";
 
 describe("fizzbuzz", () => {
 
@@ -5,3 +6,5 @@ describe("fizzbuzz", () => {
         expect(typeof fizzbuzz(5)).toBe("string")
     })
 });
+
+
