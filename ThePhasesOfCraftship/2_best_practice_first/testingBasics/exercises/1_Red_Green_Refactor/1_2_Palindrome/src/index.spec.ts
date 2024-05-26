@@ -34,7 +34,9 @@ describe('palindrome checker', () => {
         expect(isPalindrome("Never Odd or Even1")).toBe(false);
     })
 
-
+    test("'1Never Odd or Even1' should return false", () => {
+        expect(isPalindrome("1Never Odd or Even1")).toBe(true);
+    })
 
     // "mom" returns true
     // "Mom" returns true
