@@ -26,6 +26,16 @@ describe('palindrome checker', () => {
         expect(isPalindrome("Was It A Rat I Saw")).toBe(true);
     })
 
+    test("'Never Odd or Even' should return true", () => {
+        expect(isPalindrome("Never Odd or Even")).toBe(true);
+    })
+
+    test("'Never Odd or Even1' should return false", () => {
+        expect(isPalindrome("Never Odd or Even1")).toBe(false);
+    })
+
+
+
     // "mom" returns true
     // "Mom" returns true
     // "MoM" returns true
