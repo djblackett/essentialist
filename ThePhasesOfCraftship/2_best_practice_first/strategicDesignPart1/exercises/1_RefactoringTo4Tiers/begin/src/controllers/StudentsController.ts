@@ -2,6 +2,7 @@ import express, { Router } from "express";
 import { ErrorHandler } from "./ErrorHandler";
 import { isMissingKeys, parseForResponse } from "../utils";
 import { StudentsService } from "../services/studentsService";
+import { Errors } from "..";
 
 class StudentsController {
   private router: Router;
