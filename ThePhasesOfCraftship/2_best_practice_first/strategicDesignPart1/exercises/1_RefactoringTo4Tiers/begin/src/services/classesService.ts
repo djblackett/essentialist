@@ -7,4 +7,6 @@ export class ClassesService {
     const response = await this.classesPrismaRepo.create(name);
     return response;
   }
+
+  
 }

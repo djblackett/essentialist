@@ -2,6 +2,7 @@ import express, { Router } from "express";
 import { ErrorHandler } from "./ErrorHandler";
 import { isMissingKeys, parseForResponse } from "../utils";
 import { ClassesService } from "../services/classesService";
+import { Errors } from "..";
 
 export class ClassesController {
   private router: Router;
@@ -26,6 +27,7 @@ export class ClassesController {
 
   private setupRoutes() {
     this.router.post("/classes", this.createClass);
+    this.router.post("/class-enrollments", this.enrollInClass);
   }
 
   private async createClass(
@@ -57,4 +59,6 @@ export class ClassesController {
         .json({ error: Errors.ServerError, data: undefined, success: false });
     }
   }
+
+  
 }
