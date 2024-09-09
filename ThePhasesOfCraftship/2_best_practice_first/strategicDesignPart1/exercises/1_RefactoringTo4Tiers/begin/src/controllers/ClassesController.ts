@@ -27,7 +27,6 @@ export class ClassesController {
 
   private setupRoutes() {
     this.router.post("/classes", this.createClass);
-    this.router.post("/class-enrollments", this.enrollInClass);
   }
 
   private async createClass(
@@ -59,6 +58,4 @@ export class ClassesController {
         .json({ error: Errors.ServerError, data: undefined, success: false });
     }
   }
-
-  
 }
